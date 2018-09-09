@@ -16,46 +16,114 @@
     max-width: 1200px;
     height: 100px;
   }
-  nav {
-    background-color: gray;
-    min-width: 200px;
-    max-width: 1200px;
+
+  nav ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
   }
+
+  nav li {
+    width: 20%;
+    margin-left: 1%;
+    float: left;
+    text-align: center;
+  }
+  nav li a {
+   display: block;
+   padding: 0.5em 5px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #F2F2F2;
+   border-radius: 8px;
+   -webkit-box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+   box-shadow: 3px 3px 3px rgba(51,51,51,0.3);
+  }
+
+  nav a:link, nav a:visited {
+   background-color: #071726;
+ }
+ nav a:hover, nav a:active, nav a:focus {
+   background-color: #326773;
+ }
   .left {
     background-color: lightgreen;
     display: inline-block;
-    width: 197px;
+    float: left;
+    width: 200px;
     height: 350px;
-  }
+ }
+ .left li {
+   list-style-type: none;
+   margin: 0 0 0 -40px;
+   padding: 0;
+ }
+ .left a {
+   display: block;
+   padding: 0.5em 15px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #F2F2F2;
+   border: 1px solid;
+   border-color: #606B74 #02060B #02060B #606B74;
+ }
+ .left a:link, .left a:visited {
+   background-color: #071726;
+ }
+ .left a:hover, .left a:active, .left a:focus {
+   background-color: #326773;
+ }
+ .left a:hover, .left a:active, .left a:focus {
+  background-color: #326773;
+  border-color: #142A2F #61797F #61797F #142A2F;
+ }
   main {
     background-color: pink;
     display: inline-block;
-    width: 998px;
+    width: 1000px;
     height: 350px;
   }
-  ul {
-    list-style-type: none;
+  footer h1 {
+    margin-top: -5px;
+    padding-top: 20px;
+    text-align: center;
   }
+  .main {
+    padding-left: 20px;
+  }
+
 </style>
 </head>
 <body>
   <header>
-
+<img src="ec-logo-mono.svg" alt="EC-Utbildning" width="250px" height="80px">
   </header>
   <nav>
 <ul>
-  <li>Home</li>
-  <li>About</li>
-  <li>Contact</li>
-  <li>Login</li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Login</a></li>
 </ul>
   </nav>
 <aside class="left">
-
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
 </aside>
   <main>
-
+    <div class="main">
+      <h1>Om EC</h1>
+      <h2>KreativITet! Glädje! Resultat!</h2>
+      <p>Det är vad EC Utbildning står för och vad vi vill att alla våra kunder, studerande och kandidater ska uppleva i mötet med oss.</p>
+      <p>EC Utbildning har arbetat med utbildning, kompetensutveckling och jobbmatchning sedan 1985. Vi är specialiserade på tillämpad IT och ny teknik och har ett stort företagsnätverk som vi samarbetar med för att ständigt utveckla och ligga nära marknadens behov och utbud i alla våra tjänster.</p>
+    </div>
   </main>
-  <footer></footer>
+  <footer>
+    <h1> &copy; 2018 EC Utbildning </h1>
+  </footer>
 </body>
 </html>
