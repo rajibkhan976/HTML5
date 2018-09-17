@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+  .japan {
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .japan::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 70px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+  }
+  .sweden {
+    width: 200px;
+    height: 120px;
+    background-color: blue;
+  }
+
+  .sweden::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 120px;
+    background-color: yellow;
+    margin-left: 30%;
+  }
+
+  .sweden::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: yellow;
+    margin-top: -35%;
+  }
+</style>
+</head>
+<body>
+  <div class="japan">
+  </div>
+  <br><br>
+  <div class="sweden">
+
+  </div>
+</body>
+</html>
