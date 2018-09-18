@@ -9,17 +9,22 @@
     height: 120px;
     background-color: green;
     position: relative;
+    border: 1px solid black;
   }
   .japan::before {
     content: "";
     display: block;
     width: 90px;
-    height: 70px;
+    height: 65px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
     left: 25%;
     top: 25%;
+  }
+  .japan:hover {
+    background-color: white;
+    transition: background-color 0.8s ease-out 0.3s;
   }
   .sweden {
     width: 200px;
@@ -60,6 +65,83 @@
   .sweden:hover::after {
     background-color: white;
   }
+.check > input[type="checkbox"] {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.check > .fake {
+  width: 20px;
+  height: 10px;
+  border-left: 3px solid orange;
+  border-bottom: 3px solid blue;
+  transform: rotate(-45deg);
+}
+
+.check > input[type="checkbox"]:checked + .fake {
+  border-left: 3px solid red;
+  border-bottom: 3px solid green;
+  transition: border 0.2s linear 0.1s;
+}
+
+.switch {
+  position: relative;
+
+
+}
+
+.switch > input[type="checkbox"] {
+  display:none;
+}
+
+.fakeswitch {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  width: 60px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  background-color: #ccb;
+
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.fakeswitch::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 25px;
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input[type="checkbox"]:checked + .fakeswitch::before {
+  -webkit-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  transform: translateX(35px);
+}
+
+input[type="checkbox"]:checked + .fakeswitch::before {
+  background-color: blue;
+}
+.switch > input[type="checkbox"]:checked + .fakeswitch {
+  box-shadow: 30px 30px #5555ff inset;
+}
+
+.fakeswitch::before {
+  border-radius: 50%;
+}
 
 </style>
 </head>
@@ -68,7 +150,17 @@
   </div>
   <br><br>
   <div class="sweden">
-
   </div>
+<br><br>
+  <label class="check">
+<input type="checkbox" name="" value="">
+<div class="fake">
+</div>
+  </label>
+  <br><br>
+    <label class="switch">
+  <input type="checkbox" name="" value="">
+  <span class="fakeswitch"></span>
+    </label>
 </body>
 </html>
