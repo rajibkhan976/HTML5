@@ -143,24 +143,134 @@ input[type="checkbox"]:checked + .fakeswitch::before {
   border-radius: 50%;
 }
 
+.overflow {
+  width: 300px;
+  height: 300px;
+  overflow: scroll;
+  float: right;
+}
+.circle {
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.three {
+  width: 250px;
+  height: 160px;
+}
+
+.one {
+  transform: translate(-68%, 158%);
+}
+
+.two {
+  transform: translate(80%, 60%);
+}
+
+.knapp {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: teal;
+  border-radius: 25%;
+  text-align: center;
+  color: yellow;
+  line-height: 1.5em;
+}
+
+.knapp:hover {
+  width: 80px;
+  height: 40px;
+  line-height: 2.5em;
+  transition: 1s 0.5s ease;
+}
+img {
+  transition: transform 0.5s linear;
+}
+
+img:hover {
+  transform: perspective(500px) rotate3d(1, 0, 0, 180deg);
+}
+.popover {
+  max-width: 400px;
+  height: 200px;
+  background-color: #D3D3D3;
+}
+.popover span {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background-color: #FFFFFF;
+  margin: 25px 45px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 6em;
+  border-radius: 30px;
+}
+
+.popover span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  transform: rotate(-45deg);
+  left: 45%;
+  top: 90%;
+}
 </style>
 </head>
 <body>
+  <div class="overflow">
+<h1>What is Lorem Ipsum?</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h1>What is Lorem Ipsum?</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h1>What is Lorem Ipsum?</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h1>What is Lorem Ipsum?</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
   <div class="japan">
   </div>
-  <br><br>
+  <br>
   <div class="sweden">
   </div>
-<br><br>
+<br>
   <label class="check">
 <input type="checkbox" name="" value="">
 <div class="fake">
 </div>
   </label>
-  <br><br>
+  <br>
     <label class="switch">
   <input type="checkbox" name="" value="">
   <span class="fakeswitch"></span>
-    </label>
+</label><br><br>
+    <div class="circle one">
+
+    </div>
+    <div class="circle two">
+
+    </div>
+    <div class="circle three">
+
+    </div>
+    <br>
+    <a href="#" class="knapp">Knapp</a>
+    <br>
+    <img src="1.jpg" alt="myimage"><br>
+    <div class="popover">
+      <span>I am a popover!</span>
+    </div>
 </body>
 </html>
