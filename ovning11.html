@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+body {
+margin: 0;
+}
+
+/*
+h1, h2, h3 {
+margin: 20px;
+color: #808080;
+}
+
+p {
+margin: 20px;
+}
+
+#thelist {
+list-style: upper-roman;
+}
+
+#header-title {
+color: #ccc !important;
+}
+#thelist li {
+  list-style: none;
+}
+#thelist li:nth-child(2n) {
+  color: gray;
+}
+#thelist2 .beer {
+  display: none;
+}
+h3 ul, li {
+  margin-left: 30px;
+}*/
+.item {
+  height: 100px;
+  min-width: 100px;
+  border: 1px solid #949494;
+  margin: 10px 50px;
+  background-color: blue;
+}
+
+.item-container {
+  display: flex;
+}
+
+.item-container .item:nth-child(n) {
+  background-color: red;
+}
+</style>
+<body>
+  <!--div class="page">
+  <div class="page-content">
+    <h2>Welcome to the site</h2>
+    <p>This is where everything happens.</p>
+    <h3>Here are some things:</h3>
+    <ul id="thelist">
+      <li>NES</li>
+      <li>SNES</li>
+      <li>Sega Mega Drive</li>
+      <li>Atari 5200</li>
+    </ul>
+    <ul id="thelist2">
+      <li>Water</li>
+      <li class="beer">Beer</li>
+      <li>Orange Juice</li>
+      <li>Soda</li>
+    </ul>
+  </div>
+</div-->
+<div class="container">
+  <div class="item-container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <div class="item-container">
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+  </div>
+</div>
+<div class="outside item-container">
+  <div class="item">I</div>
+  <div class="item">J</div>
+  <div class="item">K</div>
+  <div>
+    <div class="item">L</div>
+  </div>
+</div>
+</body>
+</html>

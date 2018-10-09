@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Home Page</title>
+<style media="screen">
+/*  .container {
+    display: flex;
+  }
+
+    .item {
+      background-color: #ccc;
+      margin: 10px;
+      min-height: 100px;
+    }
+
+    .container_a .item {
+      flex-basis: 170px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
+    .container_a .item:nth-child(1) {
+      flex-shrink: 2;
+      flex-grow: 2;
+      background-color: green;
+    }*/
+    .container {
+      display: flex;
+      height: 300px;
+      border: 1px solid;
+    }
+    .item {
+      background-color: #ccc;
+      margin: 10px;
+      height: 50px;
+      min-width: 100px;
+      flex: 1;
+    }
+    /*.container_a .item, .container_b .item, .container_c .item {
+      max-height: 100px;
+      height: 50px;
+    }*/
+
+    .container_a {
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .container_b {
+      flex-wrap: wrap;
+      align-content: flex-end;
+      align-items: center;
+    }
+    .container_b .item {
+      max-width: 100px;
+    }
+  /*  .container_c {
+      align-items: baseline;
+    }
+
+    .container_c .item:nth-child(2) {
+      padding: 40px;
+    }
+
+    .container_d {
+      align-items: stretch;
+    }*/
+</style>
+</head>
+<body>
+  <!--h1>Flex-basis: 170px</h1>
+  <div class="container container_a">
+    <div class="item">
+      <p>flex-shrink: 2</p>
+      <p>flex-grow: 2</p>
+    </div>
+    <div class="item">
+      <p>flex-shrink: 2</p>
+      <p>flex-grow: 2</p>
+    </div>
+    <div class="item">
+      <p>flex-shrink: 2</p>
+      <p>flex-grow: 2</p>
+    </div>
+  </div>
+  <div class="container container_a">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      flex-grow: 2
+    </div>
+  </div>
+  <div class="container container_b">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      flex-grow: 2
+    </div>
+  </div>
+  <div class="container container_c">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      flex-grow: 2
+    </div>
+  </div>
+  <div class="container container_d">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      flex-grow: 2
+    </div>
+  </div-->
+  <div class="container container_a">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      C
+    </div>
+    <div class="item">
+      D
+    </div>
+    <div class="item">
+      E
+    </div>
+    <div class="item">
+      F
+    </div>
+  </div>
+  <div class="container container_b">
+    <div class="item">
+      A
+    </div>
+    <div class="item">
+      B
+    </div>
+    <div class="item">
+      C
+    </div>
+    <div class="item">
+      D
+    </div>
+    <div class="item">
+      E
+    </div>
+    <div class="item">
+      F
+    </div>
+  </div>
+</body>
+</html>

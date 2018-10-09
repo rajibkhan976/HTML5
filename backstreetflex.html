@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Home Page</title>
+<style media="screen">
+.page {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.page-row {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.member {
+  text-align: center;
+  margin: 10px;
+  flex-basis: 200px;
+}
+.name {
+  margin: 20px;
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  margin: 100px;
+  color: white;
+}
+@media (min-width: 500px) {
+  .box_a {
+    background-color: green;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .box_b {
+    background-color: green;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) {
+  .box_c {
+    background-color: green;
+  }
+}
+.image {
+  margin: auto;
+  width: 70%;
+}
+.image img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 12px;
+  }
+  .image {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="page-row">
+    <div class="member">
+      <img src="https://i.imgur.com/4OC4YzR.jpg" />
+      <div class="name">
+        Nick
+      </div>
+    </div>
+    <div class="member">
+      <img src="https://i.imgur.com/fgY4fXA.jpg" />
+      <div class="name">
+        Brian
+      </div>
+    </div>
+  </div>
+  <div class="page-row">
+    <div class="member">
+      <img src="https://i.imgur.com/S7flvKi.png" />
+      <div class="name">
+        A.J.
+      </div>
+    </div>
+    <div class="member">
+      <img src="https://i.imgur.com/ZDNRpRj.jpg" />
+      <div class="name">
+        Kevin
+      </div>
+    </div>
+    <div class="member">
+      <img src="https://i.imgur.com/7GBJeEY.jpg" />
+      <div class="name">
+        Howard
+      </div>
+    </div>
+  </div>
+</div>
+<div class="box box_a">
+  A
+</div>
+<div class="box box_b">
+  B
+</div>
+<div class="box box_c">
+  C
+</div>
+<h1>Naruto Shippuden: Ultimate Ninja Storm 4: The Road to Boruto</h1>
+<div class="image">
+  <img src="https://i.imgur.com/pYsBKP7.jpg" />
+</div>
+</body>
+</html>
