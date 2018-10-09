@@ -49,8 +49,14 @@ h3 ul, li {
   display: flex;
 }
 
-.item-container .item:nth-child(n) {
+.item-container .item:nth-child(2n+1) {
   background-color: red;
+}
+.outside .item:nth-child(n) {
+  background-color: green;
+}
+.outside .item:last-child {
+  background-color: pink;
 }
 </style>
 <body>
