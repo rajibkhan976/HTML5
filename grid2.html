@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+  .item {
+    background-color: #ccc;
+    min-height: 20px;
+    margin: 10px;
+  }
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b b b"
+      "c c d d"
+      "e e e e";
+  }
+  .container > div {
+    min-height: 150px;
+    background-color:  #ccc;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .a {
+    grid-area: a;
+  }
+  .b {
+    grid-area: b;
+  }
+  .c {
+    grid-area: c;
+  }
+  .d {
+    grid-area: d;
+  }
+  .e {
+    grid-area: e;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="a"><img src="https://i.imgur.com/xbyoAPv.jpg" /></div>
+    <div class="b"><img src="https://i.imgur.com/OOBwAXCr.jpg" /></div>
+    <div class="c"><img src="https://i.imgur.com/MNXC2pV.jpg" /></div>
+    <div class="d"><img src="https://i.imgur.com/KKuQH.jpg" /></div>
+    <div class="e"><img src="https://i.imgur.com/Afhv1so.jpg" /></div>
+    <!--div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div-->
+  </div>
+  <!--h1>Ingen object-fit</h1>
+  <div class="item_a">
+    <img src="https://i.imgur.com/OOBwAXCr.jpg" alt="">
+  </div>
+  <h1>Object-fit: cover</h1>
+  <div class="item_b">
+    <img src="https://i.imgur.com/OOBwAXCr.jpg" alt="">
+  </div-->
+</body>
+</html>
