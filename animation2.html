@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container > div {
+    margin: 10px;
+  }
+  .a {
+    min-width: 30px;
+    min-height: 100px;
+  }
+  .b {
+    width: 100px;
+    height: 100px;
+  }
+  .c {
+    max-width: 100px;
+    min-height: 30px;
+  }
+  .a {
+    animation-name: resize-a;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: blue;
+  }
+  .b {
+    animation-name: resize-b;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: blue;
+  }
+  .c {
+    animation-name: resize-c;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: blue;
+  }
+  @keyframes resize-a {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    100% {
+      width: 100px;
+    }
+  }
+  @keyframes resize-b {
+    0% {
+      border-radius: 50%;
+    }
+  }
+  @keyframes resize-c {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box a">
+
+    </div>
+    <div class="box b">
+
+    </div>
+    <div class="box c">
+
+    </div>
+  </div>
+</body>
+</html>

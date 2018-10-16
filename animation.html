@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .container > div {
+    border: 1px solid #ccc;
+    min-height: 150px;
+  }
+  .circle {
+    animation-name: resize;
+    animation-duration: 3s;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  @keyframes resize {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    100% {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .ease {
+    animation-timing-function: ease;
+    animation-iteration-count: 2;
+    animation-delay: 3s;
+  }
+  .ease-in {
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-delay: 4s;
+  }
+  .ease-out {
+    animation-timing-function: ease-out;
+    animation-iteration-count: 4;
+    animation-delay: 5s;
+  }
+  .ease-in-out {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-delay: 6s;
+  }
+  .linear {
+    animation-timing-function: linear;
+    animation-iteration-count: 6;
+    animation-delay: 7s;
+  }
+  .cb {
+    animation-timing-function: cubic-bezier(0, 1.18, 1, 0.55);
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h3>Ease</h3>
+      <div class="circle ease">
+
+      </div>
+    </div>
+    <div>
+      <h3>Ease in</h3>
+      <div class="circle ease-in">
+
+      </div>
+    </div>
+    <div>
+      <h3>Ease out</h3>
+      <div class="circle ease-out">
+
+      </div>
+    </div>
+    <div>
+      <h3>Ease in out</h3>
+      <div class="circle ease-in-out">
+
+      </div>
+    </div>
+    <div>
+      <h3>Linear</h3>
+      <div class="circle linear">
+
+      </div>
+    </div>
+    <div>
+      <h3>Cubic-beizer</h3>
+      <div class="circle cb">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
