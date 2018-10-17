@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+</head>
+<style media="screen">
+  body {
+    text-align: center;
+  }
+  .container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s infinite ease;
+  }
+  .ball {
+    padding: 10px;
+    background: red;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  .ball:nth-child(1) {
+    transform: translate(8px, -10px);
+  }
+  .ball:nth-child(2) {
+    transform: translate(0px, 10px);
+  }
+  .ball:nth-child(3) {
+    transform: translate(-8px, -10px);
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="ball">
+
+    </div>
+    <div class="ball">
+
+    </div>
+    <div class="ball">
+
+    </div>
+  </div>
+  <div class="">
+    Loading...
+  </div>
+</body>
+</html>

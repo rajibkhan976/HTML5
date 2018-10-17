@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+/*  div > div {
+    min-height: 100px;
+    background-color: grey;
+    margin: 10px;
+  }
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div > div:nth-child(1) {
+    grid-row: 1 / 3;
+  }
+  .item {
+    min-height: 100px;
+    margin: 10px;
+    background-color: grey;
+
+  }
+  .sec1 {
+    display: flex;
+  }
+  .sec1 > .item, .sec2 {
+    flex: 1;
+  }
+  .sec2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec3 {
+    display: flex;
+  }
+  .sec3 > .item {
+    flex: 1;
+  }*/
+  ul li {
+    color: blue;
+  }
+  ul li:nth-child(4) {
+    font-size: 32px;
+  }
+
+  #list2 {
+    margin-top: 40px;
+  }
+  #list1 > div:nth-child(3n+1) {
+    color: red;
+  }
+.item {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  width: 150px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.active {
+  background-color: #6363ff;
+  color: white;
+}
+.item:not(.active):hover {
+  color: white;
+  background: #9a9aff;
+}
+</style>
+</head>
+<body>
+  <!--div class="">
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+  </div>
+  <div class="sec1">
+      <div class="item">
+
+      </div>
+      <div class="sec2">
+        <div class="item">
+
+        </div>
+        <div class="sec3">
+          <div class="item">
+
+          </div>
+          <div class="item">
+
+          </div>
+        </div>
+      </div>
+  </div-->
+  <ul>
+    <li class="item active">Eelement 1</li>
+    <li class="item">Eelement 2</li>
+    <li class="item">Eelement 3</li>
+    <li class="item">Eelement 4</li>
+    <li class="item">Eelement 5</li>
+  </ul>
+  <div id="list1">
+    <div>A</div>
+    <div>B</div>
+    <div class="">
+      C
+    </div>
+    <div class="">
+      D
+    </div>
+    <div>A</div>
+    <div>B</div>
+    <div class="">
+      C
+    </div>
+    <div class="">
+      D
+    </div>
+  </div>
+  <div id="list2">
+
+  </div>
+</body>
+</html>

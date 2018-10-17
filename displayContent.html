@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+  .box {
+    min-height: 100px;
+    min-width: 10px;
+    flex: 1;
+    margin: 10px;
+    background-color: grey;
+  }
+  .specialBoxes > .box {
+    background-color: red;
+  }
+
+  .specialBoxes {
+    display: contents;
+  }
+  .container {
+    display: flex;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="specialBoxes">
+      <div class="box">
+
+      </div>
+      <div class="box">
+
+      </div>
+    </div>
+    <div class="box">
+
+    </div>
+  </div>
+</body>
+</html>

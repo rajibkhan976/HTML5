@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+:root {
+  --main-color: #f4af4a;
+  --text-color: white;
+  --big-text-size: 30px;
+  --medium-text-size: 20px;
+  --small-text-size: 16px;
+  --display-mode: flex;
+  --standard-padding: 40px;
+}
+body {
+  margin: 0;
+}
+header {
+  padding: var(--standard-padding);
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: var(--big-text-size);
+}
+.container {
+  display: var(--display-mode);
+  justify-content: center;
+  margin: 100px;
+}
+.container .box {
+  margin: 40px;
+  width: 100px;
+  min-height: 50px;
+  background-color: var(--main-color);
+  --text-color: red;
+}
+.box span {
+  color: var(--text-color);
+}
+
+@media (max-width: 500px) {
+  :root {
+    --text-color: blue;
+    --display-mode: block;
+    --big-text-size: 25px;
+    --standard-padding: 30px;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    Title
+  </header>
+  <div class="container">
+    <div class="box">
+      <span class="text">A</span>
+    </div>
+    <div class="box">
+      <span class="text">B</span>
+    </div>
+    <div class="box">
+      <span class="text">C</span>
+    </div>
+  </div>
+</body>
+</html>
