@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<style media="screen">
+#problem15 .problem-area {
+  display: flex;
+  justify-content: flex-end;
+}
+  .problem-area {
+    border: 1px solid gray;
+    min-height: 100px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+  .bg-red {
+    background-color: red;
+  }
+  .bg-green {
+    background-color: green;
+  }
+</style>
+</head>
+<body>
+<div class="problem" id="problem15">
+  <div class="problem-area">
+    <div class="">
+      <div class="box bg-red">
+        A
+      </div>
+      <div class="box bg-green">
+        B
+      </div>
+      <div class="box bg-red">
+        C
+      </div>
+    </div>
+  </div>
+</div>
+<div class="problem" id="problem50">
+  <div class="problem-area">
+    <label for="date1">Choose start date:</label>
+    <input type="date" id="date1" name="date1" value="" max="2018-10-22">
+    <label for="date2">Choose end date:</label>
+    <input type="date" id="date2" name="date2" value="" min="2018-10-22" required>
+    <button type="submit" name="button">Submit</button>
+  </div>
+</div>
+</body>
+</html>
