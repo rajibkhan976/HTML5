@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Home Page</title>
+<style media="screen">
+#problem1 .problem-area .box {
+  background-color: pink;
+  border-radius: 50%;
+}
+.problem {
+  margin: 10px;
+}
+.problem-area {
+border: 1px solid gray;
+min-height: 250px;
+padding: 10px;
+overflow: hidden;
+}
+
+.box {
+width: 100px;
+height: 100px;
+}
+.flex-wrapper .item,
+.grid-wrapper .item {
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+.bg-red {
+background-color: red;
+}
+
+.bg-blue {
+background-color: blue;
+}
+
+.bg-green {
+background-color: green;
+}
+#problem3 .problem-area {
+  display: flex;
+  justify-content: center;
+}
+#problem4 table {
+  border-collapse: collapse;
+}
+#problem4 th, #problem4 td {
+  border: 1px solid #333;
+  padding: 5px;
+}
+#problem5 .problem-area img {
+  animation: fadeout 1s infinite alternate;
+}
+@keyframes fadeout {
+  0% {
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+      }
+    }
+    #problem6 .problem-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    #problem9 .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #problem9 .item:nth-child(3) {
+      grid-column: 1/3;
+    }
+    #problem11 .problem-area > div {
+      display: flex;
+    }
+    #problem11 .problem-area > div > .box {
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      #problem11 .problem-area > div {
+       flex-direction: column;
+      }
+      #problem11 .problem-area > div > .box {
+       width: 100%;
+      }
+    }
+    #problem12 .flex-wrapper {
+      display: flex;
+    }
+    #problem12 .flex-wrapper > div {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    #problem12 .flex-wrapper .item {
+      flex-grow: 1;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="problem" id="problem1">
+    <div class="problem-area">
+        <div class="box bg-green"></div>
+      </div>
+  </div>
+  <div class="problem" id="problem2">
+      <h3>Övning 2</h3>
+      <p>I rutan finns en bild. Gör så att om man klickar på bilden så öppnas en ny flik i webbläsaren med URLen http://yahoo.com</p>
+      <div class="problem-area">
+        <a href="http://yahoo.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/05/24/07/05/searching-2339723_1280.png" width=100></a>
+      </div>
+    </div>
+    <div class="problem" id="problem3">
+      <h3>Övning 3</h3>
+      <p>Använd flexbox för att visa rutorna som på <a href="https://i.imgur.com/MIIIEt5.png" target="blank">den här bilden</a></p>
+      <div class="problem-area">
+        <div class="box bg-red">1</div>
+        <div class="box bg-green">2</div>
+        <div class="box bg-red">3</div>
+      </div>
+    </div>
+    <div class="problem" id="problem4">
+      <h3>Övning 4</h3>
+      <p>Skapa en tabell med tre kolumner med värdena "Stad", "Population" och "Land" i den översta raden.</p>
+      <p>Lägg in värdena nedan som rader i tabellen.</p>
+      <p>Stad: Stockholm, Population: 952 058, Land: Sverige</p>
+      <p>Stad: Oslo, Population: 634 293, Land: Norge</p>
+      <p>Stad: Reykjavik, Population: 127 220, Land: Island</p>
+      <div class="problem-area">
+        <table>
+          <thead>
+            <tr>
+              <th>Stad</th>
+              <th>Population</th>
+              <th>Land</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stockholm</td>
+              <td>952 058</td>
+              <td>Sverige</td>
+            </tr>
+            <tr>
+              <td>Oslo</td>
+              <td>634 293</td>
+              <td>Norge</td>
+            </tr>
+            <tr>
+              <td>Reykjavik</td>
+              <td>127 220</td>
+              <td>Island</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="problem" id="problem5">
+      <h3>Övning 5</h3>
+      <p>Återskapa animationen på <a href="https://i.imgur.com/kEHJJkq.gif" target="_blank">den här bilden.</a></p>
+      <div class="problem-area">
+        <img src="https://i.imgur.com/5hkdEfh.png" width="200">
+      </div>
+    </div>
+    <div class="problem" id="problem6">
+      <h3>Övning 6</h3>
+      <p>Använd flexbox för att lägga texten centrerad i botten av rutan.</p>
+      <div class="problem-area">
+        <span>Parma</span>
+      </div>
+    </div>
+    <div class="problem" id="problem7">
+      <h3>Övning 7</h3>
+      <p>Lägg in en knapp som öppnar en dropdownmeny med fyra länkar i med hjälp av bootstraps komponenter.</p>
+      <div class="problem-area">
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Link 1</a>
+    <a class="dropdown-item" href="#">Link 2</a>
+    <a class="dropdown-item" href="#">Link 3</a>
+    <a class="dropdown-item" href="#">Link 4</a>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="problem" id="problem8">
+      <h3>Övning 8</h3>
+      <p>Använd bootstrap grid system för att positionera rutorna nedan som på <a href="https://i.imgur.com/a7lBBu9.png" target="_blank">den här bilden.</a></p>
+      <p>Rutorna ska alltid fylla ut hela raden på bredden (förutom den padding som finns).</p>
+      <div class="problem-area">
+         <div class="container-fluid">
+          <div class="row">
+            <div class="box bg-red col-5">1</div>
+            <div class="box bg-green col-2">2</div>
+            <div class="box bg-red col-5">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="problem" id="problem9">
+      <h3>Övning 9</h3>
+      <p>Använd CSS Grid Layout för att strukturera boxarna enligt <a href="https://i.imgur.com/lBDk2xu.png" target="_blank">följande bild.</a></p>
+      <div class="problem-area">
+        <div class="grid-wrapper">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">6</div>
+          <div class="item">7</div>
+        </div>
+      </div>
+    </div>
+    <div class="problem" id="problem10">
+      <h3>Övning 10</h3>
+      <p>Lägg in ett formulär i rutan nedan med följande inputfält:</p>
+      <ul>
+        <li>Ett obligatoriskt fält där användaren kan fylla i ett användarnamn (max 10 tecken).</li>
+        <li>En dropdown där användaren kan välja mellan alternativen XS, S, M, L, XL. Låt alternativet "M" vara valt från början.</li>
+        <li>En obligatorisk checkbox för att godkänna villkoren.</li>
+      </ul>
+      <p>Formuläret ska innehålla en submit-knapp.</p>
+      <div class="problem-area">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="username" maxlength="10" required>
+          <select class="" name="" required>
+            <option value="">Select size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <div class="">
+            <label for="terms">Agree terms</label>
+            <input type="checkbox" id="terms" name="" value="" required>
+          </div>
+          <div class="">
+            <button type="submit" name="button">Register</button>
+          </div>
+        </form>
+  </div>
+</div>
+<div class="problem" id="problem11">
+      <h3>Övning 11</h3>
+      <p>Ändra så att de två första rutorna visas på en rad och de två sista på en rad. Rutorna ska fylla dela på radutrymmet lika och ta upp hela raden med sin bredd (förutom padding).</p>
+      <p>När breddstorleken på browserfönstret är 600px eller under så ska alla boxarna visas på varsin rad och ta upp hela raden med sin bredd (förutom padding).</p>
+      <p>Du får inte ta bort de klasser som redan ligger inuti .problem-area. Däremot får du strukturera om och läga till hur många klasser du vill.</p>
+  <div class="problem-area">
+    <div class="">
+      <div class="box bg-blue">1</div>
+      <div class="box bg-red">2</div>
+    </div>
+    <div class="">
+      <div class="box bg-green">3</div>
+      <div class="box bg-blue">4</div>
+    </div>
+  </div>
+</div>
+<div class="problem" id="problem12">
+      <h3>Övning 12</h3>
+      <p>Använd flexbox för att formattera divarna i rutan så att de är placerade på samma sätt som i <a href="https://i.imgur.com/COpnoFh.png" target="_blank">följande bild</a>.</p>
+      <p>Du får inte ta bort några element ur ".problem-area"-rutan. Däremot får du lägga till fler div-taggar (eller andra typer av element) runt de element som redan finns. </p>
+      <div class="problem-area">
+        <div class="flex-wrapper">
+          <div class="">
+            <div class="item">1</div>
+          </div>
+          <div class="">
+            <div class="item">2</div>
+            <div class="item">3</div>
+          </div>
+          <div class="">
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
