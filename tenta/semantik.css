@@ -1,0 +1,34 @@
+header {
+  background-color: blue;
+  max-width: 100%;
+  min-height: 200px;
+  color: white;
+}
+.header-title, .sub-title  {
+  padding: 60px 0 0 30px;
+}
+.content {
+  height: 800px;
+}
+aside {
+  float: left;
+  display: inline-block;
+  max-width: 25%;
+  height: 100%;
+  padding: 20px;
+  text-align: justify;
+}
+main {
+  display: inline-block;
+  max-width: 75%;
+  height: 100%;
+  padding: 20px;
+  text-align: justify;
+}
+footer {
+background-color: blue;
+max-width: 100%;
+height: 100px;
+color: white;
+text-align: center;
+}

@@ -1,0 +1,47 @@
+#problem1 .problem-area {
+  color: red;
+  font-size: 24px;
+}
+#problem2 .problem-area {
+  display: flex;
+}
+#problem2 .problem-area .box {
+  flex: 1;
+}
+#problem6 .problem-area img {
+  animation: spinstar 1.5s linear 0.5s infinite running;
+}
+@keyframes spinstar {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#problem7 .problem-area {
+  text-align: center;
+}
+#problem7 .problem-area p {
+  margin-top: 25px;
+}
+#problem10 .problem-area p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#problem11 .problem-area .container11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#problem11 .problem-area .container11 .item11:nth-child(1) {
+  grid-column: 1/3;
+}
+#problem14 .problem-area .main {
+  display: flex;
+}
+#problem14 .problem-area .main > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#problem14 .problem-area .main > div > .item {
+  flex: 1;
+}
