@@ -45,7 +45,7 @@ var a = 1;
 
  var g = [0, 1, 2, 3]; var h; var j = [];
 
- for (h = 0; h <= g.length; h += 1){
+ for (h = 0; h < g.length; h += 1){
  var k = g[h] * 2;
 	 j.push(k);
  }
